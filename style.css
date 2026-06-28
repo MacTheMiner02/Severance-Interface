@@ -1,3 +1,7 @@
+* {
+    user-select: none;
+}
+
 body {
     background-color: #1e3655;
     color: #86dcce;
@@ -7,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 #name-bar {
@@ -23,12 +28,15 @@ body {
 
 #top-bar {
     border-bottom: 8px double #86dcce;
+    background-color: #1e3655;
+    z-index: 1;
+    position: relative;
 }
 
 #numbers {
     flex: 1;
 
-    overflow: hidden;
+    overflow: visible;
     min-height: 0;
 
     display: grid;
@@ -51,6 +59,9 @@ body {
     justify-content: space-evenly;
     padding: 0.5%;
     border-top: 8px double #86dcce;
+    background-color: #1e3655;
+    z-index: 1;
+    position: relative;
 }
 
 .box-holder {
